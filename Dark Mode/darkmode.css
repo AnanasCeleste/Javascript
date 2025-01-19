@@ -1,0 +1,53 @@
+:root{ /* ceci est la palette de couleur du site avec le background et la couleur du text en lightmode*/
+    color: rgb(0, 0, 0);
+    background-color: antiquewhite;
+}
+
+.darkmode{
+    color: rgb(255, 230, 230); /*ici meme chose, la palette de couleur pour le darkmode*/
+    background-color: black;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--base-color);
+    color: var(--text-color);
+}
+
+#theme-switch{ /*toutes les caractéristiques de mon bouton darkmode/lightmode*/
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--base-variant);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+#theme-switch svg{
+    fill: var(--primary-color);
+}
+
+#theme-switch svg:last-child{
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child{ /*sur cette ligne et la ligne d'en dessous, on cache une des deux icones quand on est sur le darkmode/lightmode*/
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child{
+    display: block;
+}
