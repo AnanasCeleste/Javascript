@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <script type="text/javascript" src="formulaire.js"></script>
+</head>
+<body>
+    <div class="message-error"></div>
+<div class="message-succes"></div>
+
+<form id="form">
+    <div>
+    <label for="pseudo">Pseudo</label>
+    <input type="text" id="pseudo" name="pseudo" placeholder="Votre pseudo" />
+    </div>
+
+    <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Votre email" />
+    
+    </div>
+
+    <div>
+        <label for="motdepasse">Motdepasse</label>
+        <input type="password" name="motdepasse" id="motdepasse" placeholder="Votre mot de passe" />
+        <p id="erreurmdp" class="erreur"></p>
+    </div>
+
+    <button type="submit">S'inscrire</button>
+</form>
+
+<div id="contenu-formulaire"></div>
+</body>
+</html>
+
+
+
+
